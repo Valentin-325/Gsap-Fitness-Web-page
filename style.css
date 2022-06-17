@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+
+
+/* NAVBAR */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+    background-color: black;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);    
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);    
+}
+
+.navbar {
+    background: rgb(214, 214, 214);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+}
+
+.logo img{
+    height: 30px;
+    padding-left: 20px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: -100%;
+    z-index: 999;
+    /* border: 2px solid black; */
+}
+
+.menu-btn.active {
+    z-index: 999;
+    position: absolute;
+    top: 75px;
+    height: 45%;
+    width: 100%;
+    background: rgb(214, 214, 214);
+    padding: 20px 0 0 20px;
+    transition: all .4s ease;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blueviolet; */
+}
+
+.links a {
+    color: rgb(138, 41, 0);
+    text-decoration: none;
+    padding: 0 0 15px 0;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: .2s ease-in;
+}
+
+.links a:hover {
+    color: rgb(102, 102, 102);
+    padding-left: 5px;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.social-media a{
+    color: black;
+    font-size: 25px;
+    transition: .2s ease-in;
+}
+
+.social-media a:hover {
+    color: rgb(102, 102, 102);
+}
+
+/* END NAVBAR */
+
+/* START HERO */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452),rgba(35, 105, 170, 0.5)), url("/img/hero-img.jpg") ;
+    background-position-x: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 80px);
+    position: relative;
+}
+
+.hero-text {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.hero-text p, .hero-text h1, .hero-text a{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+
+}
+
+.hero-text h1 {
+    font-size: 1.3rem;
+}
+
+.hero-text a {
+    background: rgb(138, 41, 0);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.hero-text a:hover {
+    border: 3px solid rgb(138, 41, 0);
+    background: transparent;
+}
+
+.clip {
+    clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(214, 214, 214);
+}
+
+/* END HERO MOBILE */
+
+
+/* START ADVANTAGES MOBILE */
+
+.advantages {
+    background-image: linear-gradient(rgba(214, 214, 214, 1.7),rgba(66, 71, 148, 0.8)), url('/img/bg-advantages.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10px;
+}
+
+.advantages img {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 0px rgb(177, 177, 177);
+    border-radius: 3px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text p, .text h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px 0;
+    color: white;
+}
+
+.mini-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mini-container {
+    border: 2.5px solid black;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+
+.mini-container h1, .mini-container p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* END ADVANTAGES MOBILE */
+
+
+/* START CONTACT MOBILE */
+
+    .contact {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(214, 214, 214);
+        background-image: url('img/contact.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .contact form {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: rgb(60,69,134);
+        opacity: 1.1;
+        padding: 20px;
+        box-shadow: 2px 0px 10px 5px rgb(93, 97, 128);
+    }
+
+    .contact form input {
+        margin-bottom: 20px;
+        height: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 0 5px;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: white;
+        border-bottom: 2px solid white;
+    }
+
+    .contact form #button {
+        width: 50%;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        color: black;
+    }
+
+    .contact form #textarea {
+        font-family: 'Courier New', Courier, monospace;
+        padding: 5px 5px;
+        border: none;
+        outline: none;
+        background: transparent;
+        border-bottom: 2px solid white;
+        color: white;
+    }
+
+    .contact img {
+        display: none;
+    }
+
+/* END CONTACT MOBILE */
+
+
+/* Footer */
+
+    footer {
+        background: rgba(8, 8, 8, 0.8);
+        padding: 20px;
+    }
+
+    footer p {
+        text-align: center;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+    }
+
+/* End Footer */
+
+
+@media (min-width: 768px) {
+
+    /* DESKTOP NAVBAR */
+
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    
+    .menu-btn {
+        position: relative;
+        top: 0%;
+        width: auto;
+        display: inline-flex;
+        height: 0%;
+    }
+
+    .menu-btn.active {
+        position: relative;
+        top: 0%;
+        width: auto;
+        display: inline-flex;
+        height: 0%;
+        padding: 0;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links a {
+        padding: 0 0 0 0;
+        margin-left: 30px;
+    }
+    
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px;
+    }
+
+    .social-media a{
+        margin: 0 15px;
+    }
+    /* END DESKTOP NAVBAR */
+
+
+
+    /* Inner hero Desktop */
+    .inner-hero {
+        height: 35%;
+    }
+
+    .inner-hero h4 {
+        font-size: 1.8rem;
+    }
+
+    .inner-hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+    }
+
+    .hero-text p {
+        font-size: 1.7rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text a {
+        padding: 20px 40px;
+        font-size: 1.3rem;
+    }
+    /* END INNER HERO DESTOP */
+
+
+
+
+    /* ADVANTAGES DESKTOP */
+    .advantages {
+        padding: 50px 40px;
+    }
+
+    .advantages img {
+        width: 90%;
+        box-shadow: 0px 5px 25px 0px rgb(177, 177, 177);
+        border-radius: 3px;
+        padding-bottom: 0;
+        
+    }
+
+    .mini-text {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    /* END ADVANTAGES DESTOP */
+
+
+
+    /* START CONTACT DESK */
+
+    .contact form  {
+        width: 50%;
+    }
+
+    /* END CONTACT DESK */
+
+}
+
+
+@media (min-width: 994px) {
+    .advantages {
+        flex-direction: row;
+        padding: 150px 90px;
+    }
+    .advantages img {
+        width: 50%;
+    }
+
+    .text {
+        padding-left: 30px;
+    }
+
+    .mini-text {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+        /* START CONTACT DESK */
+
+        .contact form  {
+            width: 50%;
+        }
+    
+        /* END CONTACT DESK */
+}
+
+@media (min-width: 1280px) {
+    .advantages {
+        padding: 150px 120px;
+
+    }
+
+        /* START CONTACT DESK */
+
+        .contact form  {
+            width: 50%;
+        }
+    
+        /* END CONTACT DESK */
+}

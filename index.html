@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gsap - Fitness app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="home">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/img/logo.png" alt="fitness">
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu-btn">
+                <li class="links">
+                    <a href="#about" class="linkuri">About</a>
+                    <a href="#contact" class="linkuri">Contact</a>
+                    <a href="#home" class="linkuri">Home</a>
+                </li>
+                <li class="social-media">
+                    <a href="#" class="linkuri"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="linkuri"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="#" class="linkuri"><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+            </ul>
+        </nav>
+        
+    </div>
+
+    <div class="hero">
+        <div class="hero-text">
+            <p>lorem, ipsum dolor.</p>
+            <h1>Lorem ipsum dolor sit.</h1>
+            <a href="#">Contact</a>
+        </div>
+        <div class="clip"></div>
+    </div>
+
+    <section class="advantages" id="about">
+        <img src="/img/img3.jpg" alt="fitness exercises" id="advimg">
+        <div class="text">
+            <p id="ptext">Lorem, ipsum dolor.</p>
+            <h1 id="titletext">Lorem ipsum dolor sit amet.</h1>
+            <div class="mini-text">
+                <div class="mini-container">
+                    <h1>Title title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="mini-container">
+                    <h1>Title title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="mini-container">
+                    <h1>Title title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="mini-container">
+                    <h1>Title title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" >
+        <form name="contact" method="post" data-netlify="true" id="cform" >
+            <input type="text" name="nume" placeholder="Numele dumneavoastra">
+            <input type="email" name="email" placeholder="Emailul dumneavoastra" required>
+            <textarea name="text" cols="30" rows="5" placeholder="Mesajul dumneavoastra..." id="textarea"></textarea><br>
+            <input type="submit" value="Trimite" id="button">
+        </form>
+    </section>
+
+    <footer>
+        <p>Design and implementing by Teodor Valentin</p>
+    </footer>
+
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Hamburger menu -->
+    <script src="hamburger-menu.js"></script>
+    <!-- GSAP -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="gsap.js"></script>
+
+</body>
+</html>
